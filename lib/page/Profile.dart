@@ -1,0 +1,25 @@
+import 'package:firtsapp/page/drawer1.dart';
+import 'package:flutter/material.dart';
+
+class Profile extends StatefulWidget {
+  
+  @override
+  State<Profile> createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.pinkAccent,
+        title: Text('Profile Nattawat'),
+      ),
+      drawer: drawer1(),
+      body: Center(
+        child: Text('Content profile Page'),
+        ),
+    );
+      
+  }
+}
